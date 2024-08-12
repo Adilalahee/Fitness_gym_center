@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+}
+.universal_font{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+/* shared styles */
+.d_flex{
+    display: flex;
+
+}
+.d_grid{
+    display: grid;
+}
+.text_white{
+    color: #FFFFFF;
+}
+.text_dark_white{
+    color: rgba(255,255,255,0.5);
+}
+.text_maroon{
+    color: #E6533C;
+}
+
+/* header start */
+header{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    
+}
+.navbar{
+
+}
+.header_title{
+    font-size: 2.3rem;
+
+}
+nav{
+
+}
+nav ul li{
+    list-style: none;
+    margin-right: 45px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+
+}
+/* header end */
