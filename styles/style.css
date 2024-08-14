@@ -2,6 +2,7 @@
 @import url('https://fonts.cdnfonts.com/css/miama');
 *{
     margin: 0;
+    padding: 0;
 }
 .universal_font{
     font-family: "Inter", sans-serif;
@@ -9,7 +10,7 @@
     font-weight: 400;
     font-style: normal;
 }
-/* shared styles */
+/* shared styles start */
 .d_flex{
     display: flex;
 
@@ -35,11 +36,16 @@
 .c_desc_font{
     font-size: .9rem;
 }
-/* header start */
-nav, .banner, .habits,.run{
+nav, .banner, .habits,.run, .meet_team, .footer_header{
     max-width: 1440px;
     margin: 0 auto;
 }
+/* shared styles end */
+/* header start */
+header{
+    margin: 20px 0;
+}
+
 .header_title{
     font-size: 2.3rem;
     font-weight: 700;
@@ -57,7 +63,25 @@ nav, .banner, .habits,.run{
     text-decoration: none;
     font-weight: 500;
     font-size: 1.25rem;
+}
+.s_button{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 46px;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    top: 25px;
+    right: 5%;
 
+}
+.line{
+    width: 30px;
+    margin: 4px 4px;
+    background-color: white;
+    height: 4px;
 }
 .banner{
     gap: 88px;
@@ -98,12 +122,16 @@ nav, .banner, .habits,.run{
     background: none;
 }
 .banner_img{
-
+    position: relative;
 }
 .banner_images{
     background: rgba(255,255,255,0.01);
-    top: 100px;
-    left: 50px;
+    margin-top: 125px;
+    margin-right: 75px;
+}
+.banner_images{
+    background: rgba(255,255,255,0.01);
+    position: absolute;
 }
 .b_img_content{
     font-size: 3.2rem;
@@ -125,7 +153,7 @@ main > section{
 .habits{
    
 }
-.habits_title{
+.habits_title, .bmi_header{
     max-width: 670px;
     margin: 0 auto;
     text-align: center;
@@ -148,19 +176,87 @@ main > section{
 }
 /* extra mile start */
 .run{
+    padding: 30px;
     background: rgb(34, 34, 34);
     gap: 165px;
-}
-.extra{
-    margin: 40px 54px;
+    justify-content: space-between;
 
 }
+.extra{
+    max-width: 445px;
+    padding: 15px;
+
+}
+.run_desc{
+    padding: 14px 0 38px 0;
+}
 .run_img{
-    width: 366px;
-    height: 312px;
-    
+    width: 380px;
 }
 .run_img img{
     width: 100%;
     border-radius: 18px;
+}
+/* bmi start */
+.bmi{
+    background: rgb(34, 34, 34);
+}
+.bmi_cards{
+    gap: 50px;
+}
+table{
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid white;
+    padding: 5px;
+    text-align: left;
+}
+/* meet start */
+.meet_content{
+    max-width: 670px;
+    margin: 0 auto;
+    text-align: center;
+}
+.meet_team{
+    padding: 10px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    background: rgb(34, 34, 34);
+}
+.meet_card{
+    position: relative;
+    
+}
+.meet_card img{
+    border-radius: 15px;
+    width: 100%;
+}
+.meet_intro{
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+}
+/* footer start */
+footer{
+    margin-top: 30px;
+    background: rgb(34, 34, 34);
+
+}
+.footer_header{
+    justify-content: space-between;
+    border-bottom: 1px solid #FFFFFF;
+    
+}
+.fitness{
+    padding: 20px 0 20px 0px;
+}
+.fitness li{
+    list-style: none;
+}
+.foot{
+    padding: 15px 0;
+}
+.footer{
+    text-align: center;
 }

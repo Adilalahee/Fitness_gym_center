@@ -1,0 +1,14 @@
+@media screen and (max-width:576px) {
+    nav,.banner{
+        padding:0 10px;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    nav ul li{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+}
