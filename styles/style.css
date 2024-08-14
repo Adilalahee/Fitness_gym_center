@@ -36,7 +36,7 @@
 .c_desc_font{
     font-size: .9rem;
 }
-nav, .banner, .habits,.run, .meet_team, .footer_header{
+nav, .banner, .habits, .run, .meet, .footer_header{
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -163,7 +163,7 @@ header{
 /* header end */
 
 /* habit section start */
-.habits{
+.habits,.meet{
    margin: 100px 0;
 }
 .habits_title, .bmi_header{
@@ -175,10 +175,9 @@ header{
 .habits_title{
 
 }
-.habit_desc{
+.habit_desc, .meet_desc{
     padding-top: 15px;
     line-height: 25px;
-
 }
 .habit{
     grid-template-columns: repeat(4,1fr);
@@ -194,12 +193,14 @@ header{
 .habit_card h4 {
     /* text-align: center; */
 }
+/* habit end */
 /* extra mile start */
 .run{
     padding: 30px;
     background: rgb(34, 34, 34);
-    gap: 165px;
+    /* gap: 250px; */
     justify-content: space-between;
+    border-radius: 15px;
 
 }
 .extra{
@@ -211,7 +212,7 @@ header{
     padding: 14px 0 38px 0;
 }
 .run_img{
-    width: 380px;
+    width: 500px;
 }
 .run_img img{
     width: 100%;
@@ -239,14 +240,15 @@ th,td{
     text-align: center;
 }
 .meet_team{
-    padding: 10px;
+    margin-top: 15px;
+    padding: 20px;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
     background: rgb(34, 34, 34);
+    border-radius: 15px;
 }
 .meet_card{
-    position: relative;
-    
+    position: relative; 
 }
 .meet_card img{
     border-radius: 15px;
@@ -254,8 +256,12 @@ th,td{
 }
 .meet_intro{
     position: absolute;
-    bottom: 8px;
+    bottom: 15px;
     left: 10px;
+    padding: 5px;
+}
+.meet_img_title{
+    font-size: 1.25rem;
 }
 /* footer start */
 footer{
@@ -269,14 +275,26 @@ footer{
     
 }
 .fitness{
+    font-size: 2rem;
     padding: 20px 0 20px 0px;
+}
+.fitness h3{
+    font-size: 4rem;
+    color: #E6533C;
 }
 .fitness li{
     list-style: none;
 }
+.s_foot{
+    padding: 25px 0;
+}
 .foot{
-    padding: 15px 0;
+    padding-top: 10px;
 }
 .footer{
+    padding: 15px;
     text-align: center;
+}
+.footer h4{
+    font-size: 1.25rem;
 }
