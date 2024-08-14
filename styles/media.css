@@ -1,8 +1,9 @@
 @media screen and (max-width:576px) {
     nav,.banner{
-        padding:0 10px;
+        padding:0 15px;
     }
     .banner{
+        gap: 0px;
         flex-direction: column;
     }
     nav ul li{
@@ -10,5 +11,23 @@
     }
     .burger{
         display: block;
+    }
+    .banner_bg{
+        margin: 0;
+        margin-top: 5px;
+    }
+    .banner_img img{
+        width: 100%;
+    }
+    .banner_images{
+        top: 95px;
+        right: 45px;
+    }
+    .images_r {
+            left: 50px;
+            bottom: 45%;
+    }
+    .habit{
+        grid-template-columns: repeat(1,1fr);
     }
 }

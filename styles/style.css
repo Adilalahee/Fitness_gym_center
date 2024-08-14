@@ -74,8 +74,7 @@ header{
     position: absolute;
     cursor: pointer;
     top: 25px;
-    right: 5%;
-
+    right: 50px;
 }
 .line{
     width: 30px;
@@ -84,7 +83,8 @@ header{
     height: 4px;
 }
 .banner{
-    gap: 88px;
+    margin-top: 30px;
+    gap: 300px;
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 
 }
@@ -109,7 +109,7 @@ header{
 
 }
 .buttons{
-
+    
 }
 .c_button{
     font-size: 1.25rem;
@@ -119,20 +119,36 @@ header{
     background-color: #E6533C;
 }
 .banner_bg{
+    margin-left: 15px;
     background: none;
 }
 .banner_img{
     position: relative;
 }
 .banner_images{
-    background: rgba(255,255,255,0.01);
-    margin-top: 125px;
-    margin-right: 75px;
-}
-.banner_images{
-    background: rgba(255,255,255,0.01);
+    background: rgba(34, 34, 34,.9);
     position: absolute;
+    top: 140px;
+    right: -40px;
+    padding: 10px 30px 10px 10px;
+    border-radius: 8px;
 }
+.banner_images_2{
+    background: rgba(34, 34, 34, .6);
+    border-radius: 8px;
+    position: absolute;
+    left: -65px;
+    bottom: 65px;
+    padding: 7px 15px;
+    align-items: center;
+    gap: 7px;
+}
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #E6533C;
+    border-radius: 50%;
+  }
 .b_img_content{
     font-size: 3.2rem;
 }
@@ -147,11 +163,8 @@ header{
 /* header end */
 
 /* habit section start */
-main > section{
-    margin-top: 100px;
-}
 .habits{
-   
+   margin: 100px 0;
 }
 .habits_title, .bmi_header{
     max-width: 670px;
@@ -159,20 +172,27 @@ main > section{
     text-align: center;
 
 }
-.habit_title{
+.habits_title{
 
 }
 .habit_desc{
+    padding-top: 15px;
+    line-height: 25px;
 
 }
 .habit{
-    gap: 80px;
+    grid-template-columns: repeat(4,1fr);
+    padding-top: 80px;
+}
+.habit_card{
+    justify-content: center;
+    text-align: center;
 }
 .habit_img{
     border-radius: 100px;
 }
 .habit_card h4 {
-    text-align: center;
+    /* text-align: center; */
 }
 /* extra mile start */
 .run{
