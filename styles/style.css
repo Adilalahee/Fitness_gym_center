@@ -220,16 +220,22 @@ header{
 }
 /* bmi start */
 .bmi{
+    margin: 15px 0;
     background: rgb(34, 34, 34);
 }
+.bmi_card_title{
+    text-align: center;
+}
 .bmi_cards{
-    gap: 50px;
+    padding: 20px 0;
+    justify-content: space-around;
+    /* gap: 50px; */
 }
 table{
     border-collapse: collapse;
 }
 th,td{
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 5px;
     text-align: left;
 }
