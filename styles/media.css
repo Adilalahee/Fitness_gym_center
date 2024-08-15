@@ -1,5 +1,5 @@
 @media screen and (max-width:576px) {
-    nav,.banner, .meet, .footer_header,.bmi{
+    nav,.banner, .meet, .footer_header,.bmi,.facts{
         padding:0 15px;
     }
     .banner{
@@ -16,7 +16,7 @@
         margin: 0;
         margin-top: 5px;
     }
-    .banner_img img, .run_img{
+    .banner_img img, .run_img,table,.fact_img{
         width: 100%;
     }
     .banner_images{
@@ -29,13 +29,26 @@
     }
     .habit{
         grid-template-columns: repeat(1,1fr);
+        gap: 20px;
     }
-    .run, .footer_header, .bmi_cards{
+    .run, .footer_header, .bmi_cards,.facts{
         margin: 0 5px;
         flex-direction: column;
     }
-    
+    .bmi_form_title{
+        padding-top: 10px;
+    }
+    .bmi_cards{
+        border-radius: 5px;
+        padding: 0 15px;
+    }
+    .first{
+        width: 100%;
+    }
     .meet_team{
         grid-template-columns: repeat(1,1fr);
+    }
+    .fact_btn{
+      left: 10px;
     }
 }
