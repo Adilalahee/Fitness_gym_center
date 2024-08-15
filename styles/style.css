@@ -10,6 +10,9 @@
     font-weight: 400;
     font-style: normal;
 }
+.universal_bg{
+    background: #111111;  
+}
 /* shared styles start */
 .d_flex{
     display: flex;
@@ -27,16 +30,13 @@
 .text_maroon{
     background-color: #E6533C;
 }
-.universal_bg{
-    background: #111111;  
-}
 .c_title_font{
     font-size: 3rem;
 }
 .c_desc_font{
     font-size: .9rem;
 }
-nav, .banner, .habits, .run, .meet, .footer_header{
+nav, .banner, .run,.facts, .footer_header{
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -164,7 +164,8 @@ header{
 
 /* habit section start */
 .habits,.meet{
-   margin: 100px 0;
+    max-width: 1440px;
+   margin: 100px auto;
 }
 .habits_title, .bmi_header{
     max-width: 670px;
@@ -221,14 +222,19 @@ header{
 /* bmi start */
 .bmi{
     margin: 15px 0;
-    background: rgb(34, 34, 34);
+    padding: 15px 0;
 }
 .bmi_card_title{
-    text-align: center;
+    /* text-align: center; */
+    padding: 0 0 20px 0;
+}
+.bmi_desc{
+    padding: 10px 0;
 }
 .bmi_cards{
     padding: 20px 0;
     justify-content: space-around;
+    background: rgb(34, 34, 34);
     /* gap: 50px; */
 }
 table{
@@ -239,6 +245,39 @@ th,td{
     padding: 5px;
     text-align: left;
 }
+.bmi_form_desc{
+    padding: 15px 0;
+}
+.first{
+    
+}
+.first input{
+    width: 40%;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255,255, .1);
+}
+.first select{
+    margin: 0 3px;
+    padding: 3px;
+    width: 43%;
+    border-radius: 4px;
+    background-color: rgba(255, 255,255, .1);
+
+}
+.select{
+    background-color: rgba(255, 255,255, .1);
+    width: 87%;
+    padding: 4px;
+    margin: 4px;
+}
+.form_button{
+    margin: 15px 0;
+    padding: 10px 25px;
+    display: block;
+}
+
 /* meet start */
 .meet_content{
     max-width: 670px;
@@ -268,6 +307,15 @@ th,td{
 }
 .meet_img_title{
     font-size: 1.25rem;
+}
+/* facts start */
+.facts{
+    gap:50px
+}
+.fact{
+    padding: 50px 30px;
+}
+.fact_card{
 }
 /* footer start */
 footer{

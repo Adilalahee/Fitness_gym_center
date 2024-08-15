@@ -95,19 +95,19 @@
 <section class="bmi text_white">
     <div class="bmi_header">
         <h3 class="bmi_title c_title_font">BMI Calculator</h3>
-        <p class="bmi_desc c_desc_font">Here you can Calculate your BMI and also you can check whether you are eligible or not for the training</p>
+        <p class="bmi_desc c_desc_font text_dark_white">Here you can Calculate your BMI and also you can check whether you are eligible or not for the training</p>
     </div>
     <div class="bmi_cards d_flex">
         <div class="bmi_card">
             <h4 class="bmi_card_title">BMI Calculator Chart</h4>
             <table>
-                <thead>
+                <thead class="text_white">
                     <tr>
                         <th>BMI</th>
                         <th>Weight Status</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="text_dark_white">
                     <tr>
                         <td>Below 18.5</td>
                         <td>Underweight</td>
@@ -127,19 +127,21 @@
         </div>
         <div class="bmi_form">
             <h4 class="bmi_form_title">Calculate your BMI</h4>
-            <p class="bmi_form_desc">Here you give your requirements and we will do the rest.</p>
+            <p class="bmi_form_desc text_dark_white">Here you give your requirements and we will do the rest.</p>
             <form action="" class="first">
                 <input type="text" placeholder="Weight/cm">
                 <input type="text" placeholder="Weight/cm">
             </form>
             <form action="" class="first">
                 <input type="text" placeholder="Weight/cm">
-                <input type="text" placeholder="Weight/cm">
+                <select name="" id="">
+                    <option value="">Sex</option>
+                </select>
             </form>
-            <select name="" id="">
+            <select class="select" name="" id="">
                 <option value="">Select an activity factor</option>
             </select>
-            <button>Submit</button>
+            <button class="form_button c_button">Calculate</button>
         </div>
     </div>
 </section>
@@ -192,6 +194,25 @@
             </div>
         </div>
         
+    </div>
+</section>
+<section class="facts d_flex text_white">
+    <div class="fact">
+        <h3 class="facts_title">Unlock your full potentials,<br>Achieve your goals</h3>
+        <div class="fact_card">
+            <h4 class="fact_title">Free Fitness Training</h4>
+            <p class="facts_desc">Pedal your way to fitness in our specialized indoor cycling studio. Equipped with stationary bikes.</p>
+        </div>
+        <div class="fact_card">
+            <h4 class="fact_title">Free Fitness Training</h4>
+            <p class="facts_desc">Pedal your way to fitness in our specialized indoor cycling studio. Equipped with stationary bikes.</p>
+        </div>
+        <button>Read more</button>
+
+    </div>
+    <div class="fact_img">
+        <img src="images/features.png" alt="">
+        <button class="">We have trained more than 1580+ students</button>
     </div>
 </section>
     </main>
